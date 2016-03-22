@@ -1,0 +1,356 @@
+/**
+ * GONAM e-commerce
+ * Copyright 2014. All right reserved.
+ */
+
+/* General */
+
+body {
+	background:url('../imgs/background.png') repeat-x top center #f3f3f3;
+	font-family:Tahoma, Arial, sans-serif;
+	font-size:0.8em;
+	color:#848484;
+}
+
+#main_wrap {
+	width:900px;
+	margin:0 auto 0 auto;
+}
+
+/* Header */
+
+#header_wrap {
+	width:100%;
+	height:40px;
+	text-shadow:1xp 1px 1px #000;
+	margin:0 0 30px 0;
+}
+
+#h_account {
+	line-height:40px;
+	color:#bebebe;
+	float:left;
+}
+
+#h_account a {
+	color:#d16d12;
+	text-decoration:none;
+}
+
+#h_account a:hover { text-decoration:underline; }
+
+/* Vertical navigation */
+
+#nav_wrap {
+	width:190px;
+	float:left;
+}
+
+.nav_box {
+	background:#fff;
+	border:1px solid #dcdde1;
+	margin:0 0 10px 0;
+}
+
+.nav_title {
+	background:url('../imgs/blockhead.png') repeat-x;
+	width:100%;
+	height:29px;
+	text-shadow:1px 1px 1px #000;
+	line-height:29px;
+	overflow:hidden;
+	color:#bebebe;
+}
+
+.nav_title p { padding:0 5px; }
+
+.nav_box ul {
+	list-style:none;
+	margin:5px 0 0 0;
+	padding:0;
+}
+
+.nav_box li {
+	height:30px;
+	line-height:30px;
+	padding:0 0 0 10px;
+	font-size:0.9em;
+}
+
+.nav_box li a {
+	text-decoration:none;
+	color:#656565;
+	
+}
+
+.nav_box li a:hover, .nav_box li .active { text-decoration:underline; }
+
+.nav_icon {
+	width:16px;
+	height:16px;
+	background:url('../imgs/navicons.png') no-repeat;
+	margin:0 5px 0 0;
+	display:inline-block;
+}
+
+.nav_icon.home { background-position:0 0; }
+.nav_icon.page { background-position:-16px 0; }
+.nav_icon.user { background-position:-32px 0; }
+.nav_icon.group { background-position:-48px 0; }
+.nav_icon.setting { background-position:-64px 0; }
+.nav_icon.access { background-position:-80px 0; }
+.nav_icon.mail { background-position:0 -16px; }
+.nav_icon.plane { background-position:-16px -16px; }
+.nav_icon.card { background-position:-32px -16px; }
+.nav_icon.category { background-position:-48px -16px; }
+.nav_icon.article { background-position:-64px -16px; }
+.nav_icon.stat { background-position:-80px -16px; }
+
+/* Body */
+
+#data_wrap {
+	width:690px;
+	float:left;
+	margin:0 0 0 20px;
+}
+
+.data_box {
+	background:#fff;
+	border:1px solid #dcdde1;
+	margin:0 auto 10px auto;
+	width:690px;
+}
+
+.d_content { padding:10px 15px; }
+
+.d_title {
+	background:url('../imgs/blockhead.png') repeat-x;
+	width:100%;
+	height:29px;
+	text-shadow:1px 1px 1px #000;
+	line-height:29px;
+	text-indent:10px;
+	color:#bebebe;
+}
+
+.half_box {
+	width:335px;
+	background:#FFFFFF;
+	border:1px solid #DCDDE1;
+	margin:0 0 10px 0;
+}
+
+.box_left { float:left; }
+.box_right { float:right; }
+
+/* Text */
+
+p {
+	margin:0;
+	padding:0;
+}
+
+.d_content p {
+	margin:5px 0;
+}
+
+h1, h2, h3 {
+	font-weight:bold;
+	color:#444;
+	margin:5px 0;
+}
+
+.data_box ol, .data_box ul { margin:0 0 0 30px; }
+
+.t_justify { text-align:justify; }
+.t_right { text-align:right; }
+.t_center { text-align:center; }
+
+/* Form */
+
+label {
+	float:left;
+	margin:3px 10px 0 0;
+	min-width:20%;
+}
+
+input[type=text], input[type=password], select {
+	padding:5px;
+	border:1px solid #dcdde1;
+	border-radius:5px;
+	margin:0 0 10px 0;
+	color:#a9a9a9;
+}
+
+textarea {
+	border:1px solid #dcdde1;
+	border-radius:5px;
+	margin:0 0 10px 0;
+	color:#a9a9a9;
+}
+
+input[type=text]:focus, input[type=password]:focus, select:focus, textarea:focus {
+	color:#444;
+	border:1px solid #999;
+}
+
+textarea {
+	border:1px solid #dcdde1;
+	border-radius:5px;
+	margin:0 0 10px 0;
+	color:#a9a9a9;
+	font-family:inherit;
+	padding:5px;
+}
+
+.d_button, input[type=button], input[type=submit], button {
+	background:#fff;
+	border:none;
+	border-radius:5px;
+	padding:8px 20px;
+	text-decoration:none;
+	cursor:pointer;
+	color:#444;
+	font-weight:bold;
+	margin:0 5px;
+	background:#dcdde1;
+	display:inline-block;
+}
+
+.d_button:hover, input[type=button]:hover, input[type=submit]:hover, button:hover {
+	color:#fff;
+	background:#999;
+}
+
+.form_action {
+	text-align:right;
+}
+
+/* Table */
+
+.d_table { 
+	width:100%; 
+	border-spacing:1px 0;
+	border-collapse:separate;
+	color:#444;
+}
+
+.d_table th {
+	padding:6px 0;
+	background:url('../imgs/blockhead.png') repeat-x;
+	color:#bebebe;
+	text-shadow:1px 1px 1px #222;
+}
+
+.d_table td { padding:8px 6px; }
+.d_table tr:nth-child(even) td { background:#eaeaea }
+.d_table tr:hover td { background:#c5effc; }
+
+/* Pagination */
+
+.pagination {
+	text-align:center;
+	margin:10px 0 5px 0;
+	list-style:none;
+}
+
+.pagination a { color:#444; }
+.pagination a:hover { border:1px solid #999; }
+
+.pagination a, .pagination span {
+	text-decoration:none;
+	padding:6px 10px;
+	border:1px solid #dcdde1;
+	display:inline-block;
+	margin:0 2px;
+}
+
+.pagination .active {
+	font-weight:bold;
+	border:1px solid #999;
+}
+
+/* Icons */
+
+.d_icon {
+	width:16px;
+	height:16px;
+	background:url('../imgs/icons.png') no-repeat;
+	display:inline-block;
+}
+
+.d_icon.go { background-position:0 0; }
+.d_icon.edit { background-position:-16px 0; }
+.d_icon.del { background-position:-32px 0; }
+.d_icon.mail { background-position:-48px 0; }
+.d_icon.key { background-position:0 -16px; }
+.d_icon.user { background-position:-16px -16px; }
+.d_icon.print { background-position:-32px -16px; }
+.d_icon.pdf { background-position:-48px -16px; }
+
+/* Notice */
+
+.notice {
+	display:block;
+	padding:5px 10px 10px 55px;
+	min-height:35px;
+	background:#d9d9d9;
+	border-radius:5px;
+	color:#fefefe;
+	margin:10px 0;
+}
+
+.notice p { margin:5px 0; }
+.notice p:first-child { margin:12px 0 5px 0; }
+
+.notice.info {
+	background:#b0e0e6 url('../imgs/ntinfo.png') no-repeat 10px 10px;
+	color:#4169e1;
+}
+
+.notice.error {
+	background:#f4cac6 url('../imgs/nterror.png') no-repeat 10px 10px;
+	color:#7d0e18;
+}
+
+.notice.success {
+	background:#dff6c5 url('../imgs/ntsuccess.png') no-repeat 10px 10px;
+	color:#0a6715;
+}
+
+/* Others */
+
+hr {
+	border:none;
+	height:1px;
+	background:#dcdde1;
+	margin:10px 0;
+}
+
+.clearfix:after, .clearfix:before {
+	content:".";
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
+}
+
+/* Footer */
+
+#footer {
+	width:100%;
+	height:25px;
+	background:url('../imgs/blockhead.png') repeat-x;
+	margin:25px 0 0 0;
+	bottom:0;
+}
+
+.copyright {
+	line-height:25px;
+	text-shadow:1px 1px 1px #000;
+	padding:0 10px;
+	color:#e6e6e6;
+	font-size:0.9em;
+}
+
+/* END */

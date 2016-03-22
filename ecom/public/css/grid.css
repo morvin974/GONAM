@@ -1,0 +1,98 @@
+/**
+ * namedGrid - a simple fluid grid system at six columns.
+ * Author : Candia Nicolas
+ * Date : 09/16/2014
+ * Version : 1.1
+ * ---------------------------------------------------
+ * MIT License
+ */
+ 
+.row, .row-spaced {
+	width:100%;
+	min-width:100px;
+}
+
+.col {
+	float:left;
+	overflow:hidden;
+}
+
+.row-spaced .col, .row .spaced {
+	margin:0 0 1% 1.6%;
+}
+
+.row-spaced .unspace {
+	margin:0 0 1% 0;
+}
+
+.row:first-child.col, .row-spaced:first-child.col {
+	margin-top:0;
+}
+
+.col:first-child {
+	margin-left:0;
+}
+
+.row:before, .row:after, .row-spaced:before, .row-spaced:after {
+	content:".";
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
+}
+
+.row, .row-spaced {
+	zoom:1; /* For IE 6 & 7 */
+}
+
+/* Dimension without spaces */
+.row .full, .row .w6-6 { width:100%; }
+.row .huge, .row .w5-6 { width:75%; }
+.row .large, .row .w4-6 { width:66.67%; }
+.row .half, .row .w6-6 { width:50%; }
+.row .small, .row .w2-6 { width:33.33%; }
+.row .tiny, .row .w1-6 { width:25%; }
+
+/* Dimension with spaces */
+.row-spaced .full, .spaced.full, .row-spaced .w6-6 { width:100%; }
+.row-spaced .huge, .spaced.huge, .row-spaced .w5-6 { width:75%; }
+.row-spaced .large, .spaced .large, .row-spaced .w4-6 { width:66.14%; }
+.row-spaced .half, .spaced.half, .row-spaced .w3-6 { width:49.2%; }
+.row-spaced .small, .spaced.small, .row-spaced .w2-6 { width:32.20%; }
+.row-spaced .tiny , .spaced.tiny, .row-spaced .w1-6 { width:23.4%; }
+
+/* For screen under 480px of larger */
+@media only screen and (max-width:480px) {
+	.row .s-full, .row .s6-6 { width:100%; }
+	.row .s-huge, .row .s5-6 { width:75%; }
+	.row .s-large, .row .s4-6 { width:66.67%; }
+	.row .s-half, .row .s3-6 { width:50%; }
+	.row .s-small, .row .s2-6 { width:33.33%; }
+	.row .s-tiny, .row .s1-6 { width:25%; }
+	
+	.row-spaced .s-full, .row-spaced .s6-6 { width:100%; }
+	.row-spaced .s-huge, .row-spaced .s5-6 { width:75%; }
+	.row-spaced .s-large, .row-spaced .s4-6 { width:66.14%; }
+	.row-spaced .s-half, .row-spaced .s3-6 { width:49.2%; }
+	.row-spaced .s-small, .row-spaced .s2-6 { width:32.26%; }
+	.row-spaced .s-tiny, .row-spaced .s1-6 { width:23.4%; }
+}
+
+/* For screen under 720px of larger */
+@media only screen and (max-width:720px) {
+	.row .m-full, .row .m6-6 { width:100%; }
+	.row .m-huge, .row .m5-6 { width:75%; }
+	.row .m-large, .row .m4-6 { width:66.67%; }
+	.row .m-half, .row .m3-6 { width:50%; }
+	.row .m-small, .row .m2-6 { width:33.33%; }
+	.row .m-tiny, .row .m1-6 { width:25%; }
+	
+	.row-spaced .m-full, .row-spaced .m6-6 { width:100%; }
+	.row-spaced .m-huge, .row-spaced .m5-6 { width:75%; }
+	.row-spaced .m-large, .row-spaced .m4-6 { width:66.14%; }
+	.row-spaced .m-half, .row-spaced .m3-6 { width:49.2%; }
+	.row-spaced .m-small, .row-spaced .m2-6 { width:32.26%; }
+	.row-spaced .m-tiny, .row-spaced .m1-6 { width:23.4%; }
+}
+
+/* END */
